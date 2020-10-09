@@ -109,6 +109,14 @@ class AuthorizationCodeGrant {
 
   /// The generated PKCE code verifier
   String _codeVerifier;
+  
+  String getCodeVerifier() {
+    return this._codeVerifier;
+  }
+  
+  void setCodeVerifier({String codeVerifier}) {
+    this._codeVerifier = codeVerifier;
+  }
 
   /// Creates a new grant.
   ///
